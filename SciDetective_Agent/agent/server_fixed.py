@@ -25,7 +25,7 @@ except ImportError:
 
 # Import our agent with error handling
 try:
-    from agent import SciDetectiveAgent, AgentConfig
+    from the_agent import SciDetectiveAgent, AgentConfig
     AGENT_AVAILABLE = True
 except ImportError as e:
     print(f"Warning: Could not import SciDetectiveAgent: {e}")
