@@ -436,7 +436,7 @@ class SciDetectiveAgent:
                     if concepts:
                         search_query = f"{field} {' '.join(concepts[:3])}"
 
-                search_result = await self.search_literature(search_query)
+                search_result = asyncio.run(self.search_literature(search_query))
                 if search_result.success:
                     results['literature_search'] = search_result.data
 
