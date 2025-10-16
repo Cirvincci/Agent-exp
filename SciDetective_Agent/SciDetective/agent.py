@@ -658,7 +658,7 @@ model_type = os.getenv('MODEL', 'deepseek/deepseek-chat')
 
 toolset = MCPToolset(
     connection_params=SseServerParams(
-        url="http://hpdk1393603.bohrium.tech:50002/sse",
+        url="http://localhost:50002/sse",
     ),
 )
 
