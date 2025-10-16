@@ -12,7 +12,7 @@ from typing import List, Dict, Any, Optional
 from mcp.server.fastmcp import FastMCP
 
 # Import our agent
-from .the_agent import SciDetectiveAgent, AgentConfig
+from .agent import SciDetectiveAgent, AgentConfig
 
 # Initialize the agent
 agent_config = AgentConfig(

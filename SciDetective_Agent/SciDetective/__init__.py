@@ -5,7 +5,7 @@ A comprehensive scientific research assistant that helps analyze essays,
 detect blind spots, generate research ideas, and search scientific literature.
 """
 
-from .the_agent import SciDetectiveAgent, AgentConfig, AgentResponse
+from .agent import SciDetectiveAgent, AgentConfig, AgentResponse
 from .text_analysis import TextAnalyzer, AnalysisResult, BlindSpot, EssaySection
 from .idea_generator import IdeaGenerator, ResearchIdea, ResearchGap
 from .web_searcher import ScientificWebSearcher, Paper, SearchResult

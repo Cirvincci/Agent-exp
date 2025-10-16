@@ -14,10 +14,18 @@ import logging
 from datetime import datetime
 
 # Import our custom modules
-from .text_analysis import TextAnalyzer, AnalysisResult
-from .idea_generator import IdeaGenerator, ResearchIdea, ResearchGap
-from .web_searcher import ScientificWebSearcher, Paper
-from .visualization import VisualizationGenerator, VisualizationConfig
+try:
+    # Try relative imports first
+    from .text_analysis import TextAnalyzer, AnalysisResult
+    from .idea_generator import IdeaGenerator, ResearchIdea, ResearchGap
+    from .web_searcher import ScientificWebSearcher, Paper
+    from .visualization import VisualizationGenerator, VisualizationConfig
+except ImportError:
+    # Fall back to absolute imports
+    from text_analysis import TextAnalyzer, AnalysisResult
+    from idea_generator import IdeaGenerator, ResearchIdea, ResearchGap
+    from web_searcher import ScientificWebSearcher, Paper
+    from visualization import VisualizationGenerator, VisualizationConfig
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
